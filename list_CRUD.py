@@ -20,7 +20,7 @@ def delete_job(jobs):
         if job["id"] == del_id:
             jobs.remove(job)
             print("Darbo skelbimas sėkmingai ištrintas")
-            break
+            return
     else:
         print("Toks id neegzistuoja")
 
@@ -32,11 +32,14 @@ def edit_job(jobs):
             print("Įveskite pozicijos pavadinimą:")
             job["position"] = input()
             print("Įveskite darbo užmokesčio dydį:")
-            job["salary"] = int(input())
+            job["salary"] = float(input())
             print("Įveskite lokaciją:")
             job["location"] = input()
             print("Įveskite įgūdžius:")
             job["required skills"] = input()
+            return
+    else:
+        print("Toks id neegzistuoja")
 
 def create_job(jobs,id_counter):
     print("Įveskite naujos pozicijos pavadinimą:")
