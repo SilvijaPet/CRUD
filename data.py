@@ -1,4 +1,4 @@
-def load_jobs():
+def load_data():
     return [
     {"id":1,
      "position":"Duomenų analitikas",

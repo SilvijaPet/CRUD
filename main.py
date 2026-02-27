@@ -1,4 +1,3 @@
-from data import load_jobs
 from list_CRUD import *
 
 jobs = load_jobs()

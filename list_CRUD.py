@@ -1,3 +1,5 @@
+from data import load_data
+
 def print_info():
     print("------------------------------")
     print("1. Atvaizduoti darbo skelbimus.")
@@ -6,6 +8,9 @@ def print_info():
     print("4. Trinti darbo skelbimą.")
     print("5. Išeiti iš programos.")
     print("------------------------------")
+
+def load_jobs():
+    return load_data()
 
 def print_jobs(jobs):
     print("Atvaizduoju darbo skelbimus:")
